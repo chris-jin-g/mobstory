@@ -1,14 +1,12 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 
-const Hello = ({ name }) => {
-  const [count, setCount] = useState(23);
-  return (
-    <>
-      <p>Hello {name}!, this is a simple hello world component</p>
-    </>
-  );
-};
+const Hello = ({ name }) => (
+  <>
+    <p>Hello {name}!, this is a simple hello world component</p>
+    <h3>husky sample</h3>
+  </>
+);
 
 Hello.propTypes = {
   name: PropTypes.node,
